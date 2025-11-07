@@ -1,0 +1,58 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    background-image: linear-gradient(lightblue, white);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.bg form {
+    background-color: white;
+    height: auto; /* Let height adjust automatically */
+    width: 450px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; /* ensures inputs stretch full width */
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(118, 75, 162, 0.3);
+    margin-top: 10px;
+    transition: 0.3s;
+}
+

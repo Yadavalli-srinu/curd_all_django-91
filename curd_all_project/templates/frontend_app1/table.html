@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'CSS/table.css' %}">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>mobile</th>
+            <th>email</th>
+            <th>dept</th>
+            <th>join_date</th>
+            <th>Edit</th>
+            <th>Del</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.age}}</td>
+            <td>{{i.mobile}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.dept}}</td>
+            <td>{{i.join_date}}</td>
+            <td><a href="{% url 'update_form' i.id%}">edit</a></td>
+            <td><a href="{% url 'delete_record' i.id %}">del</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'formname' %}">Open_Form</a>
+</body>
+</html>
