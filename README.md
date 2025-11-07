@@ -1,0 +1,1 @@
+# curd_all_django-91
